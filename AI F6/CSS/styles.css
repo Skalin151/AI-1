@@ -1,0 +1,49 @@
+body {
+    background-color:#f003fc;
+
+    background-image: url('../Imagens/goku.jpg');
+    background-size: 500px 710px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    
+}
+
+
+h1 {
+color: white;
+position: absolute;
+top: 50px;
+left: 600px;
+
+
+
+
+}
+
+
+p {
+    font-size: 1.5em;
+    font-family: Verdana;
+    position: absolute;
+    top: 175px;
+    left: 600px;
+    margin-right:  10%;
+    border: 5px;
+    border-style: ridge;
+    border-color: cyan;
+    border-radius: 10px;
+}
+
+#audio {
+
+position: absolute;
+top: 400px;
+left: 750px;
+margin-right: 10%;
+
+
+}
+
+

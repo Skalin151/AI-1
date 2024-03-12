@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<<html>
+  <head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/jogo.js"></script>
+  </head>
+  <body>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div id="quiz-container">
+      <div class="question">
+        <p>Pergunta 1: Qual &eacute; a linguagem de marca&ccedil;&atilde;o usada para criar p&aacute;ginas web?</p>
+        <div class="options options1">
+          <div class="option" data-correct="true" onclick="checkAnswer(this, true, 1)">HTML</div>
+          <div class="option" onclick="checkAnswer(this, false, 1)">CSS</div>
+          <div class="option" onclick="checkAnswer(this, false, 1)">JavaScript</div>
+          <div class="option" onclick="checkAnswer(this, false, 1)">Python</div>
+        </div>
+      </div>
+      
+      <br>
+      <div class="question">
+        <p>Pergunta 2: Qual &eacute; a linguagem de personaliza&ccedil;&atilde;o usada para criar p&aacute;ginas web?</p>
+        <div class="options options2">
+          <div class="option" onclick="checkAnswer(this, false, 2)">HTML</div>
+          <div class="option" data-correct="true" onclick="checkAnswer(this, true, 2)">CSS</div>
+          <div class="option" onclick="checkAnswer(this, false, 2)">JavaScript</div>
+          <div class="option" onclick="checkAnswer(this, false, 2)">Python</div>
+        </div>
+      </div>
+      
+      <br>
+      <div class="question">
+        <p>Pergunta 3: Qual &eacute; a linguagem de programa&ccedil;&atilde;o usada para criar p&aacute;ginas web?</p>
+        <div class="options options3">
+          <div class="option" onclick="checkAnswer(this, false, 3)">HTML</div>
+          <div class="option" onclick="checkAnswer(this, false, 3)">CSS</div>
+          <div class="option" data-correct="true" onclick="checkAnswer(this, true, 3)">JavaScript</div>
+          <div class="option" onclick="checkAnswer(this, false, 3)">Python</div>
+        </div>
+      </div>
+      
+      <br>
+      <div class="question">
+        <p>Pergunta 4: Qual &eacute; a linguagem de marca&ccedil;&atilde;o usada para criar p&aacute;ginas web?</p>
+        <div class="options options4">
+          <div class="option" data-correct="true" onclick="checkAnswer(this, true, 4)">HTML</div>
+          <div class="option" onclick="checkAnswer(this, false, 4)">CSS</div>
+          <div class="option" onclick="checkAnswer(this, false, 4)">JavaScript</div>
+          <div class="option" onclick="checkAnswer(this, false, 4)">Python</div>
+        </div>
+      </div>
+      
+      <div id="result-message">
+        <p id="score">Pontuação: <span id="pontos">0</span></p>
+        <p>Queres jogar outra vez ? <span id="play-again" onclick="resetQuiz()">Clica aqui</span></p>
+      </div>
+      
+      <div id="pontuacao-final" style="display: none;">
+        <p>Pontuação Final: <span id="pontos-final">0</span></p>
+        <input type="text" id="caixa-texto" placeholder="Pretende jogar novamente?" />
+        <button onclick="reiniciarQuiz()">Jogar Novamente</button>
+      </div>
+    </div>
+  </body>
+</html>

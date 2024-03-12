@@ -1,0 +1,40 @@
+ul {
+    list-style: none;
+    background-color:  #F4F5F4;
+    letter-spacing: 20px;
+    border: 1px solid #F69F5B;
+    margin: 5px 0;
+
+
+    
+}
+
+li {
+
+    font-family: Arial;
+    width: 230px;
+    padding: 10px;
+    
+
+
+}
+
+#three{
+    background-color: #A4A9AA;
+}
+
+#four{
+    background-color: #F18A54;
+}
+
+#five{
+    background-color: #C82F1D;
+}
+
+#six{
+    background-color: #252D31;
+}
+
+#seven{
+    background-color:#FF5254;
+}

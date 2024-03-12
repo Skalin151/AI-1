@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Adivinha o numero</title>
+    <link rel="stylesheet" href="css/adivinha.css">
+    <script src="js/adivinha.js"></script>
+    <script src="js/calculadora.js"></script>
+    </head>
+    <body>
+        <div class="adivinha">
+        <br>
+        <a>Adivinha o numero de 1 a 10</a>
+        <input type="number" id="numero">
+        <button onclick="tentar()">Tentar</button>
+        </div>
+
+
+        <div class="adivinha0a100">
+            <br>
+            <a>Adivinha o numero de 1 a 100</a>
+        <input type="number" id="numero1">
+        <button onclick="tentar1()">Tentar</button>
+        </div>
+    
+<br><br><br><br>    
+    <div class="calculadora">
+        Numero 1:<input type="number" id="valor1" placeholder="Valor 1"><br>
+        Numero 2:<input type="number" id="valor2" placeholder="Valor 2"><br>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    
+    
+    <p id="resultado"></p>
+</div>
+
+    
+    
+    </body>
+</html>

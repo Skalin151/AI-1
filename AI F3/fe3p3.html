@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formul&aacute;rio</title>
+
+</head> 
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+
+            <input type="Texto" id="nome" name="nome" placeholder="Primeiro e &uacute;ltimo nome" oninput="this.value = this.value.replace(/[0-9]/g, '');">
+            <br>
+            
+
+       
+       <p> <label for="email">Email:</label>
+        <input type="Texto" id="nome" name="nome" placeholder="email@empresa.pt"> </p>
+    
+    
+        <p><label for="reason">Motivo de contrato:</label>
+            <select id="motivo" name="motivo">
+                <option value="sugestao">Sugest&atilde;o</option>
+                <option value="critica">Cr&iacute;tica</option>
+                <option value="informacao">Informa&ccedil;&atilde;o</option>
+                <option value="outro">Outro</option>
+            </select></p> <br>
+
+        <p>
+            <label for ="message">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="10" cols="10"> </textarea>
+        
+        
+        
+        </p>
+
+
+
+
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+        </form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Regex</title>
+    <body background="https://media.tenor.com/6CMUVBh0H-cAAAAC/chips-potato-chips.gif" height="50" width="50"></body>
+</head>
+
+<body>
+    <center>
+    <h1>Testes de Regex</h1>
+    <fieldset>
+
+    <form id="regexForm">
+        <div>
+            <label for="texto">Apenas texto:</label>
+            
+            <input type="Texto" id="nome" name="nome" placeholder="Apenas texto" oninput="this.value = this.value.replace(/[0-9]/g, '');">
+        </div>
+
+        <div>
+            <label for="numeros">Apenas números:</label>
+        
+            <input type="Texto" id="nome" name="nome" placeholder="Apenas Números" oninput="this.value = this.value.replace(/[a-z,A-Z,ã-õ,`-~]/g, '');">
+        </div>
+
+        <div>
+            <label for="minúsculas">Apenas 'a' a 'z':</label>
+            <input type="Texto" id="nome" name="nome" placeholder="Apenas 'a' a 'z'" oninput="this.value = this.value.replace(/[a-z,A-Z]/g, '');">
+        </div>
+
+        <div>
+            <label for="ipv">Apenas "ipv":</label>
+            <input type="Texto" id="nome" name="nome" placeholder="Apenas ipv" oninput="this.value = this.value.replace(/[^ipv]/g, '');">
+        </div>
+
+        <div>
+            <label for="nao_ipv">Não "ipv":</label>
+            <input type="Texto" id="nome" name="nome" placeholder="Não ipv" oninput="this.value = this.value.replace(/[i,p,v]/g, '');">
+        </div>
+
+        <div>
+            <label for="quinze_maiusculas">Sempre 15:</label>
+            <input type="Texto" id="nome" name="nome" placeholder="15 Maiusculas" oninput="this.value = this.value.replace(/[^A-Z]/g, ''); this.value = this.value.slice(0, 15);"
+        </div>
+
+        <div>
+            <label for="telemovel">Número de telemóvel:</label>
+            <input type="Texto" id="nome" name="nome" placeholder="Numero de telemovel" oninput="this.value = this.value.replace(/[^0-9]/g, ''); if (this.value.length > 1) { if (this.value[0] !== '9' || !['1', '2', '3', '6'].includes(this.value[1])) { this.value = '9' + this.value[1]; } }">
+        </div>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    </fieldset>
+
+
+    <p>
+    <audio controls>
+        <source src="imagens\chip 10 hours.m4a" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    
+
+    </p>
+</center>
+</body>
+
+</html>

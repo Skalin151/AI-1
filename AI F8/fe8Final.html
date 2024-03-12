@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex 8</title>
+        <link rel="stylesheet" href="css/fe8Final.css"></link>
+        <script src="js/fichajavascript.js"></script>
+    </head>
+    <body>
+        <div class="titulo">
+            <br><h1>Ficha 8 . Exerc&iacute;cio 8</h1>
+        </div>
+
+
+        <div class="corpo">
+        
+          <div class="vf">
+            <img class="arrow" src="imagens/external-link.png" onclick="window.location.href='fe8p1.html'" >
+           <br> <button onclick="clicar()">Clique aqui</button>
+            <div class="alerta"></div><br>
+            <p id="txt">Ao clicar no botão, o alerta troca entre "verdadeiro" e falso.</p>
+            
+          </div>
+
+          <div class="dias">
+            <img class="arrow" src="imagens/external-link.png" onclick="window.location.href='fe8p1.html'">
+           <br> <button class="1" onclick="clicar1()">Clique aqui</button>
+           <div class="alerta1"></div><br>
+           <p id="txt">Ao clicar no botão, o alerta vai ciclar pelos dias da semana.</p>
+            
+          </div>
+
+          <div class="cores">
+            <img class="arrow" src="imagens/external-link.png" onclick="window.location.href='fe8p2.html'">
+           Trocar cor com hover<br>
+            <label id="label1" style="color: #f49e42;" class="color-label">#f49e42</label>
+            <label id="label2" style="color: #7e8477;" class="color-label">#7e8477</label>
+            <label id="label3" style="color: #47a4ef;" class="color-label">#47a4ef</label>
+            <label id="label4" style="color: #ad0c39;" class="color-label">#ad0c39</label>
+          
+            <div id="colorDiv" class="color-div"></div>
+            </div>   
+        
+        </div>
+
+
+
+          <div class="corpo2">
+
+            <div class="addez">
+                <img class="arrow" src="imagens/external-link.png" onclick="window.location.href='fe8p3.html'" >
+                <br><a>Adivinha o numero de 1 a 10</a>
+                <input type="number" id="numero">
+                <button onclick="tentar()">Tentar</button>
+            </div>
+
+            <div class="adcem">
+                <img class="arrow" src="imagens/external-link.png" onclick="window.location.href='fe8p3.html'" >
+                <br><a>Adivinha o numero de 1 a 100</a>
+                <input type="number" id="numero1">
+                <button onclick="tentar1()">Tentar</button>
+            </div>
+
+
+            <div class="calculadora">
+                <img class="arrow" src="imagens/external-link.png" onclick="window.location.href='fe8p3.html'" >
+                <br>Numero 1:<input type="number" id="valor1" placeholder="Valor 1"><br>
+                Numero 2:<input type="number" id="valor2" placeholder="Valor 2"><br>
+            <button onclick="multiplicar()">Multiplicar</button>
+            <button onclick="dividir()">Dividir</button>
+            
+            
+            <p id="resultado"></p>
+
+          </div>
+
+
+
+    </body>
+</html>
